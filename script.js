@@ -1,9 +1,14 @@
-let loginButton = document.getElementById('loginButton');
-let registerButton = document.getElementById('registerButton');
+let loginToRegister = document.querySelector('.login-register');
+let registerToLogin = document.querySelector('.register-login');
+let registerForm = document.querySelector('.register');
+let loginForm = document.querySelector('.login');
 
-loginButton.addEventListener('click', function() {
-    window.location.href = './login.html';
+loginToRegister.addEventListener('click', () => {
+    registerForm.classList.add('active');
+    loginForm.classList.add('active');
 })
-registerButton.addEventListener('click', function() {
-    window.location.href = './register.html';
+
+registerToLogin.addEventListener('click', () => {
+    registerForm.classList.remove('active');
+    loginForm.classList.remove('active');
 })
