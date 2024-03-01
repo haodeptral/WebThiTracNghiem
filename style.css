@@ -1,0 +1,104 @@
+:root {
+  --background: white;
+  --red: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--red);
+}
+
+#loginButton {
+  width: 100px;
+  height: 30px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  background: transparent;
+  border: solid 2px black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-box h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 2px black;
+}
+
+.input-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: black;
+  font-weight: 300;
+}
+
+.loginSubmitButton {
+  margin-top: 10px;
+  border: solid 2px black;
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+
+}
+
+.loginSubmitButton:hover {
+  margin-top: 10px;
+  border: solid 2px black;
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
