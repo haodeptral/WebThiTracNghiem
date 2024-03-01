@@ -2,7 +2,11 @@
   --background: white;
   --red: red;
 }
-
+img{
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 20%;
+}
 * {
   margin: 0;
   padding: 0;
